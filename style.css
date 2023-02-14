@@ -1,0 +1,196 @@
+body{
+    margin: 3%;
+    /* margin-right: 3%; */
+}
+/* ::::::::::::::::::::: Début header ::::::::::::::::::::::::::::::::: */
+header{
+    display: flex;
+    align-items: baseline;
+}
+.titre{
+    width: 30%;
+    color: rgb(12, 133, 231);
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 3em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ::::::::::::::::::: fin du header ::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::: barre de recherche :::::::::::::::::::::::::::::::::::: */
+.recherche{
+    display: flex;
+   
+}
+.loca{
+    background-color: lightgray;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: black;
+}
+input{
+    padding: 1em;
+    border-left:none ;
+    border-right:none ;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+button{
+    padding: 1em;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color:rgb(12, 133, 231);
+    color: white;
+}
+/* :::::::::::::::::::::: fin de la barre de recherche ::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::: début filtres et info :::::::::::::::::::::::::::::::::::::::: */
+.selection{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: baseline;
+    margin: left 0%; 
+}
+.sel{
+    border: 1px solid lightgray;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0.5em;
+    display: flex;
+    gap: 10px;
+}
+i{
+    color: rgb(12, 133, 231);
+}
+.loge{
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+.info{
+    border-radius: 100%;
+    border: solid 1px lightgray;
+    padding: 0.5em;
+}
+/* ::::::::::::::::::::: fin filtre et info ::::::::::::::::::::::: */
+/* :::::::::::::::::::: Début Chambres :::::::::::::::::::::::::::::::: */
+.chambres-global{
+    display: flex;
+    gap: 5em;
+}
+.chambre{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    width: 65%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    width: 100%;
+    padding-left: 15px;
+}
+.un{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("images/hotel_du_port.jpg");
+    background-position: bottom;
+    height: 200px;
+    width: 250px;
+    border: 3px white solid;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.233) 1px 1px 3px 3px ;
+    margin: 1em;
+
+}
+.une{
+    padding-left: 5%;
+    background-color: #FFFF;
+    height: 40%;
+    width: 95%;
+    border-radius: 0 0 10px 10px;
+    line-height: 5px;
+}
+h4{
+    width: 100%;
+    padding-left: 15px;
+}
+.chambre2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    width: 30%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.deux{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 20%;
+    border: solid 4px #FFFF;
+    background-image: url("images/au_coeur.jpg");
+    object-position: center;
+    object-fit: contain;
+    justify-content: flex-end;
+    font-size: small;
+    border-radius: 15px;
+}
+.trois{
+    background-color: white;
+    width: 60%;
+    height:100%;
+    line-height: 1.5em;
+}
+/* :::::::::::::::::::: fin des chambres ::::::::::::::::::::::: */
+/* :::::::::::::::::::::: début activités ::::::::::::::::::::::::: */
+.activité-global{
+  margin-top: 5em;
+}
+.lieux-activité{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;   
+}
+.lieux{
+    height: 25em;
+    width : 20%;
+    background-color: lightgray;
+    margin: 0px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.534);
+    background-image: url("images/iles_frioul.jpg");
+}
+.lieu-dit{
+    background-color: #FFFF;
+    height: 15%;
+    border-radius: 0 0 15px 15px;
+    padding-left: 1em;
+}
+/* ::::::::::::::: Fin activités ::::::::::::::::::::::: */
+/* :::::::::::::::::::: début footer :::::::::::::::::::: */
+footer{
+    margin-top: 5em;
+    background-color: lightgray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+ul li{
+    list-style: none;
+    
+}
