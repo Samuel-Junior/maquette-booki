@@ -7,10 +7,11 @@ header{
     display: flex;
     align-items: baseline;
 }
-.titre{
-    width: 30%;
-    color: rgb(12, 133, 231);
+.book{
+ height: 2em;
+ width: 5.5em;
 }
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -20,6 +21,9 @@ nav{
 a{
     text-decoration: none;
     color: black;
+}
+a:hover{
+     color: rgb(12, 133, 231);
 }
 /* ::::::::::::::::::: fin du header ::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::::::::::: barre de recherche :::::::::::::::::::::::::::::::::::: */
@@ -66,6 +70,10 @@ button{
     display: flex;
     gap: 10px;
 }
+.sel:hover{
+    background-color: rgb(148, 202, 246);
+    cursor: pointer;
+}
 i{
     color: rgb(12, 133, 231);
 }
@@ -102,15 +110,26 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("images/hotel_du_port.jpg");
     background-position: bottom;
     height: 200px;
-    width: 250px;
+    width: 230px;
     border: 3px white solid;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.233) 1px 1px 3px 3px ;
     margin: 1em;
-
+}
+.un img{
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; 
+}
+.gras{
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+  
 }
 .une{
     padding-left: 5%;
@@ -122,7 +141,6 @@ h2{
 }
 h4{
     width: 100%;
-    padding-left: 15px;
 }
 .chambre2{
     display: flex;
@@ -132,6 +150,13 @@ h4{
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
+    justify-content: flex-start;
+}
+.popular{
+    display: flex;
+    align-items: flex-end;
+    gap: 150px;
+    justify-content: flex-start;
 }
 .deux{
     display: flex;
@@ -139,18 +164,26 @@ h4{
     width: 75%;
     height: 20%;
     border: solid 4px #FFFF;
-    background-image: url("images/au_coeur.jpg");
-    object-position: center;
-    object-fit: contain;
     justify-content: flex-end;
     font-size: small;
     border-radius: 15px;
+    flex-direction: row;
+}
+.deux img{
+    height: 100%;
+    width: 40%;
+    border-radius: 15px 15px 0;
+    object-fit: cover;
 }
 .trois{
     background-color: white;
     width: 60%;
     height:100%;
     line-height: 1.5em;
+    text-indent: 2px;
+}
+.star-last{
+    color: rgb(199, 202, 204);
 }
 /* :::::::::::::::::::: fin des chambres ::::::::::::::::::::::: */
 /* :::::::::::::::::::::: début activités ::::::::::::::::::::::::: */
@@ -172,7 +205,13 @@ h4{
     justify-content: flex-end;
     flex-direction: column;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.534);
-    background-image: url("images/iles_frioul.jpg");
+    
+}
+.lieux img{
+    height: 85%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
 }
 .lieu-dit{
     background-color: #FFFF;
@@ -180,17 +219,81 @@ h4{
     border-radius: 0 0 15px 15px;
     padding-left: 1em;
 }
+
 /* ::::::::::::::: Fin activités ::::::::::::::::::::::: */
 /* :::::::::::::::::::: début footer :::::::::::::::::::: */
 footer{
     margin-top: 5em;
     background-color: lightgray;
-    border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    width: 90%;
+}
+ul {
+    padding: 0%;
 }
 ul li{
     list-style: none;
     
+}
+/* :::::::::::::::::::: Fin Footer :::::::::::::::::::::::::::: */
+/* :::::::::::::::::::: Début du responsive !!!!! :::::::::::: */
+@media (max-width: 1000px){
+    .chambres-global{
+        display: flex;
+        flex-direction: column;
+        flex-wrap :wrap ;
+        align-items: center;
+    }
+    .chambre{
+        width: 100%;
+    }
+    .chambre2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .popular{
+        width: 100%;
+    }
+    .deux{
+        width: 20%;
+        height: auto;
+    }
+    .deux img{
+        height: auto;
+    }
+}
+@media (max-width: 720px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .titre{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    nav{
+            display: flex;
+            width: 100%;
+            gap: 0%;
+    }
+   a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    border-bottom:2px solid lightgray;
+    width: 100%;
+    justify-content: center;
+   }
+   .reve{
+       width: 62%;
+   }
 }
